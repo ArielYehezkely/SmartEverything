@@ -8,10 +8,10 @@ from telegram import Location
 from time import sleep
 
 # Bot token receieved from BotFather
-TOKEN = '973514997:AAEfShjP5bwbkLhNBo-G-VE_zR539imt3xs'
+TOKEN = ''
 
 # Luis applicatio key
-LUIS_KEY = '129829b126ea451a89d0804e10bf1ba1'
+LUIS_KEY = ''
 
 # Global parameters  
 is_locked = False
