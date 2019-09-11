@@ -10,8 +10,9 @@ from time import sleep
 # Bot token receieved from BotFather
 TOKEN = ''
 
-# Luis applicatio key
+# Luis application setup
 LUIS_KEY = ''
+ENDPOINT = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/1463f532-eb87-4cd6-aa69-197ef6e0fbce?verbose=true&timezoneOffset=-360&q='
 
 # Global parameters  
 is_locked = False
@@ -100,7 +101,7 @@ def where_are_you(update, context):
 ###################################################### Language Understanding ###################################################
 
 # Parse the message and call the right command handler
-def hadleTextMessage(update, context):
+def hadle_text_message(update, context):
     intent = get_intent(update.message.text)
     if (intent == "get lights"):
         islightson(update, context)
@@ -114,7 +115,6 @@ def hadleTextMessage(update, context):
         turn_off_lights(update, context)
     elif (intent == "Turn on the lights"):
         turn_on_lights(update, context)
-
     elif (intent == "unlock"):
         unlock(update, context)
     else:
@@ -130,7 +130,7 @@ def get_intent(message):
 
     try:
 		# Send the request to the Luis application endpoint
-        r = requests.get('https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/1463f532-eb87-4cd6-aa69-197ef6e0fbce?verbose=true&timezoneOffset=-360&q=' + message, headers=headers)
+        r = requests.get(ENDPOINT + message, headers=headers)
 		
 		# Get the top scoring intent from the possible intents list
         return r.json()['topScoringIntent']['intent']
@@ -151,11 +151,11 @@ def main():
     dp.add_handler(CommandHandler("unlock", unlock))
     dp.add_handler(CommandHandler("turnonlights", turn_on_lights))
     dp.add_handler(CommandHandler("turnofflights", turn_off_lights))
-    dp.add_handler(CommandHandler("islightson", islightson))
-    dp.add_handler(CommandHandler("whereareyou", whereareyou))
+    dp.add_handler(CommandHandler("islightson", is_lights_on))
+    dp.add_handler(CommandHandler("whereareyou", where_are_you))
 	
 	# Set up a message handler for text messages
-    dp.add_handler(MessageHandler(Filters.text, hadleTextMessage))
+    dp.add_handler(MessageHandler(Filters.text, hadle_text_message))
 	
 	# Start listen for incoming messages
     updater.start_polling()
