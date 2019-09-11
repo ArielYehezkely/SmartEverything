@@ -1,7 +1,8 @@
 # Sensors
 
 ## [LCD](https://shop.pimoroni.com/products/0-96-spi-colour-lcd-160x80-breakout) 
-![LCD](https://cdn.shopify.com/s/files/1/0174/1800/products/0-96-LCD-breakout-white_6dba69f5-b1ab-48aa-8d30-87e11d84fa13_1024x1024.gif?v=1554898279 =100x)
+![LCD]()
+<img src="https://cdn.shopify.com/s/files/1/0174/1800/products/0-96-LCD-breakout-white_6dba69f5-b1ab-48aa-8d30-87e11d84fa13_1024x1024.gif?v=1554898279" alt="drawing" width="200"/>
 
 ### [Python Library](https://github.com/pimoroni/st7735-python)
 
