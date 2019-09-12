@@ -41,11 +41,11 @@
 ### [Python Library](https://github.com/pimoroni/max30105-python)
 
 ## [Pi Camera](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
-<img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjz2cS208rkAhUF36QKHeJrAvQQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.dexterindustries.com%2Fproduct%2Fraspberry-pi-camera%2F&psig=AOvVaw1wq_XXbOOk6uBPgo53UD_c&ust=1568355970925672" alt="drawing" width="200"/>
+<img src="https://32414320wji53mwwch1u68ce-wpengine.netdna-ssl.com/wp-content/uploads/2015/07/Raspberry-Pi-Camera-800x800.jpg" alt="drawing" width="200"/>
 
 ### [Full Guide](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
 
 ## [Servo]
-<img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwioxYLe08rkAhUDIVAKHbzsAscQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.banggood.com%2FTowerPro-SG90-Mini-Gear-Micro-Servo-9g-For-RC-Airplane-Helicopter-p-1009914.html&psig=AOvVaw3pKq_Xx0Wy9Dt63VU3y74P&ust=1568356053327791" alt="drawing" width="200"/>
+<img src="https://cdn.solarbotics.com/products/photos/7f654958712313246f3e29a35278d71c/25500-dscn3970.JPG?w=800" alt="drawing" width="200"/>
 
 ### Python Code - see CarBot example
